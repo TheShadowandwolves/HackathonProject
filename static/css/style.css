@@ -66,37 +66,39 @@ body, html{
 .ticketNumber{ 
     position: absolute;
     top: 400px;
-    left: 1000px;
+    left: 610px;
     background-color: #333;
     color: white;
     font-size: 24px;
-    width: 80px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
 .date{
     position: absolute;
     top: 400px;
-    left: 750px;
+    left: 410px;
     background-color: #333;
     color: white;
-    width: 80px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
 .time{
     position: absolute;
     top: 400px;
-    left: 500px;
+    left: 200px;
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
+
+
 .firstName{
     position: absolute;
     top: 460px;
@@ -104,7 +106,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -115,7 +117,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -126,21 +128,23 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
 .age{
     position: absolute;
-    top: 460px;
-    left: 520px;
+    top: 440px;
+    left: 215px;
     background-color: #333;
     color: white;
-    width: 80px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
+
+
 .sex{
     position: absolute;
     top: 500px;
@@ -148,7 +152,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -159,7 +163,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -170,7 +174,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -181,7 +185,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -192,7 +196,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -204,7 +208,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -215,7 +219,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -226,7 +230,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -237,7 +241,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -248,7 +252,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -259,7 +263,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -270,7 +274,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -281,7 +285,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -292,7 +296,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -303,7 +307,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -314,7 +318,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -325,7 +329,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -336,7 +340,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -347,7 +351,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -358,7 +362,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -369,7 +373,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -380,7 +384,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -391,7 +395,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -402,7 +406,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -413,7 +417,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -424,7 +428,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -435,7 +439,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -446,7 +450,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -457,7 +461,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -468,7 +472,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -479,7 +483,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -490,7 +494,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -501,7 +505,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -512,7 +516,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -523,7 +527,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -534,7 +538,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -545,7 +549,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -556,7 +560,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -567,7 +571,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
@@ -578,7 +582,7 @@ body, html{
     background-color: #333;
     color: white;
     width: 80px;
-    height: 40px;
+    height: 30px;
     /*put it in the front ebene*/
     z-index: 1;
 }
