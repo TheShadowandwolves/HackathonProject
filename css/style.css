@@ -1,0 +1,37 @@
+body{
+    background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.nav {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

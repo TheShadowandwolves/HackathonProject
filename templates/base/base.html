@@ -3,13 +3,13 @@
     <head>
         {% block head %}{% endblock %}
         <meta name="description" content="This is the description">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='#') }}"/>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='style.css') }}"/>
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="main-header">
             <nav class="nav main-nav">
-                <ul>
+                <ul class="ul-nav">
                     <li><a href="{{ url_for('home') }}">HOME</a></li>
                     <li><a href="{{ url_for('form') }}">PROJECT</a></li>
                     <li><a href="{{ url_for('about') }}">ABOUT</a></li>
