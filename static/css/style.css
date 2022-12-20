@@ -48,7 +48,7 @@ body, html{
     display: flex;
     position: absolute;
     top: 450flapx;
-    left: 40%;
+    left: 25%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -56,10 +56,26 @@ body, html{
     width: 650px;
     height: 950px;
 }
+/* 
+.fill-it{
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    put it in the front ebene
+    z-index: 1;
+} 
+*/
 
 .ticketNumber{ 
-    top: 10%;
-    left: 10%;
+    top: 20%;
+    left: 40%;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    /*z-index: 1;*/
 }
 .date{
     top: 10%;
