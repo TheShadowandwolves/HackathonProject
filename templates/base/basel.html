@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}{% endblock %}
+        <meta name="description" content="This is the description">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='#') }}"/>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('form') }}">PROJECT</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+            {% block titlePage %}{% endblock %}
+        </header>
+<body>
+    
+    {% block body %}{% endblock %}
+    <footer class="main-footer">
+       
+    </footer>
+</body>
+</html>
