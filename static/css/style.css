@@ -9,13 +9,14 @@ body, html{
     margin: 0;
     padding: 0;
     justify-content: center;
+    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .Titlename{
-    margin: auto;
+    margin: 0 10px;
     margin-top: 10px;
     font-size: 60px;
     font-weight: 700;
@@ -23,7 +24,9 @@ body, html{
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 800px;
     display: flex;
+    z-index: 2;
 }
 
 .main-header{
@@ -35,7 +38,7 @@ body, html{
     text-align: center;
     flex-direction: column;
     margin-top: 100px;
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
 
@@ -46,9 +49,9 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     top: 450flapx;
-    left: 25%;
+    /*left: 40%;*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -56,232 +59,526 @@ body, html{
     width: 650px;
     height: 950px;
 }
-/* 
-.fill-it{
-    background-color: #333;
-    color: white;
-    width: 80px;
-    height: 40px;
-    put it in the front ebene
-    z-index: 1;
-} 
-*/
+
+
+
 
 .ticketNumber{ 
-    top: 20%;
-    left: 40%;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
+}
+.date{
+    position: absolute;
+    top: 400px;
+    left: 750px;
     background-color: #333;
     color: white;
     width: 80px;
     height: 40px;
     /*put it in the front ebene*/
-    /*z-index: 1;*/
-}
-.date{
-    top: 10%;
-    left: 50%;
+    z-index: 1;
 }
 .time{
-    top: 10%;
-    left: 60%;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .firstName{
-    top: 20%;
-    left: 50%;
-
+    position: absolute;
+    top: 460px;
+    left: 1020px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .lastName{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 460px;
+    left: 790px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .idNumber{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 460px;
+    left: 610px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .age{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 460px;
+    left: 520px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .sex{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .address{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 500px;
+    left: 720px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .telephone{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 500px;
+    left: 490px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .mainConcern{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 480px;
+    left: 560px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .scenarioDetailed{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 480px;
+    left: 610px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
-.importantMetrics{
-    top: 20%;
-    left: 50%;
-}
+
 .levelOfConsciencenessTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 800px;
+    left: 950px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .levelOfConsciencenessTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 800px;
+    left: 830px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .breathingStatusTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 840px;
+    left: 950px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .breathingStatusTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 840px;
+    left: 940px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .breathsPerMinuteTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 880px;
+    left: 940px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .breathsPerMinuteTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 880px;
+    left: 830px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .saturationTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 920px;
+    left: 940px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .saturationTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 920px;
+    left: 830px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .pulsesPerMinuteTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 960px;
+    left: 940px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .pulsesPerMinuteTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 960px;
+    left: 830px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .strengthOfPulseTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 800px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .strengthOfPulseTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 800px;
+    left: 490px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .pulseRegularityTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 840px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .pulseRegularityTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 840px;
+    left: 490px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .systolicBloodPressureTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 880px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .systolicBloodPressureTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 880px;
+    left: 480px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .diastolicBloodPressureTime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 920px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .diastolicBloodPressureTime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 920px;
+    left: 480px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .glucoseTest1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 960px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .glucoseTest2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 960px;
+    left: 480px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .allergies{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1010px;
+    left: 830px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .temperaturePOPRtime1{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1010px;
+    left: 600px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .temperaturePOPRtime2{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1010px;
+    left: 480px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .treatmentsGiven{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1060px;
+    left: 470px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .ALSlevelTreatments{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1170px;
+    left: 450px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .ALSdrugTherapy{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1230px;
+    left: 450px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .methodOfEvacuation{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1300px;
+    left: 990px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .evacuationDestination{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1300px;
+    left: 750px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .reasonForReferral{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1300px;
+    left: 460px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .patientNameAndDriversNumber{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1340px;
+    left: 960px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .attendingDoctorAndLiscenceNumber{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1340px;
+    left: 720px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .signature{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1340px;
+    left: 470px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .nameRefusalOfHospitalization{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1410px;
+    left: 740px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .idRefusalOfHospitalization{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1410px;
+    left: 610px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }
 .signatureRefusalOfHospitalization{
-    top: 20%;
-    left: 50%;
-}
-.treatmentsGiven{
-    top: 20%;
-    left: 50%;
-}
-.treatmentsGiven{
-    top: 20%;
-    left: 50%;
-}
-.treatmentsGiven{
-    top: 20%;
-    left: 50%;
-}
-.treatmentsGiven{
-    top: 20%;
-    left: 50%;
-}.treatmentsGiven{
-    top: 20%;
-    left: 50%;
+    position: absolute;
+    top: 1410px;
+    left: 460px;
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    /*put it in the front ebene*/
+    z-index: 1;
 }

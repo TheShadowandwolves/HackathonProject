@@ -3,10 +3,12 @@ from HackathonProject import app
 import random
 
 
-
+data = "home"
 ### app routes ###
 
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html')
+
+    print("dic")
+    return render_template('home.html', dat = data)
