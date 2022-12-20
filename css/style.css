@@ -35,3 +35,228 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.report-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.form-input{
+    display: flex;
+    position: absolute;
+}
+
+.ticketNumber{ 
+    top: 10%;
+    left: 10%;
+}
+.date{
+    top: 10%;
+    left: 50%;
+}
+.time{
+    top: 10%;
+    left: 60%;
+}
+.firstName{
+    top: 20%;
+    left: 50%;
+
+}
+.lastName{
+    top: 20%;
+    left: 50%;
+}
+.idNumber{
+    top: 20%;
+    left: 50%;
+}
+.age{
+    top: 20%;
+    left: 50%;
+}
+.sex{
+    top: 20%;
+    left: 50%;
+}
+.address{
+    top: 20%;
+    left: 50%;
+}
+.telephone{
+    top: 20%;
+    left: 50%;
+}
+.mainConcern{
+    top: 20%;
+    left: 50%;
+}
+.scenarioDetailed{
+    top: 20%;
+    left: 50%;
+}
+.importantMetrics{
+    top: 20%;
+    left: 50%;
+}
+.levelOfConsciencenessTime1{
+    top: 20%;
+    left: 50%;
+}
+.levelOfConsciencenessTime2{
+    top: 20%;
+    left: 50%;
+}
+.breathingStatusTime1{
+    top: 20%;
+    left: 50%;
+}
+.breathingStatusTime2{
+    top: 20%;
+    left: 50%;
+}
+.breathsPerMinuteTime1{
+    top: 20%;
+    left: 50%;
+}
+.breathsPerMinuteTime2{
+    top: 20%;
+    left: 50%;
+}
+.saturationTime1{
+    top: 20%;
+    left: 50%;
+}
+.saturationTime2{
+    top: 20%;
+    left: 50%;
+}
+.pulsesPerMinuteTime1{
+    top: 20%;
+    left: 50%;
+}
+.pulsesPerMinuteTime2{
+    top: 20%;
+    left: 50%;
+}
+.strengthOfPulseTime1{
+    top: 20%;
+    left: 50%;
+}
+.strengthOfPulseTime2{
+    top: 20%;
+    left: 50%;
+}
+.pulseRegularityTime1{
+    top: 20%;
+    left: 50%;
+}
+.pulseRegularityTime2{
+    top: 20%;
+    left: 50%;
+}
+.systolicBloodPressureTime1{
+    top: 20%;
+    left: 50%;
+}
+.systolicBloodPressureTime2{
+    top: 20%;
+    left: 50%;
+}
+.diastolicBloodPressureTime1{
+    top: 20%;
+    left: 50%;
+}
+.diastolicBloodPressureTime2{
+    top: 20%;
+    left: 50%;
+}
+.glucoseTest1{
+    top: 20%;
+    left: 50%;
+}
+.glucoseTest2{
+    top: 20%;
+    left: 50%;
+}
+.allergies{
+    top: 20%;
+    left: 50%;
+}
+.temperaturePOPRtime1{
+    top: 20%;
+    left: 50%;
+}
+.temperaturePOPRtime2{
+    top: 20%;
+    left: 50%;
+}
+.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}
+.ALSlevelTreatments{
+    top: 20%;
+    left: 50%;
+}
+.ALSdrugTherapy{
+    top: 20%;
+    left: 50%;
+}
+.methodOfEvacuation{
+    top: 20%;
+    left: 50%;
+}
+.evacuationDestination{
+    top: 20%;
+    left: 50%;
+}
+.reasonForReferral{
+    top: 20%;
+    left: 50%;
+}
+.patientNameAndDriversNumber{
+    top: 20%;
+    left: 50%;
+}
+.attendingDoctorAndLiscenceNumber{
+    top: 20%;
+    left: 50%;
+}
+.signature{
+    top: 20%;
+    left: 50%;
+}
+.nameRefusalOfHospitalization{
+    top: 20%;
+    left: 50%;
+}
+.idRefusalOfHospitalization{
+    top: 20%;
+    left: 50%;
+}
+.signatureRefusalOfHospitalization{
+    top: 20%;
+    left: 50%;
+}
+.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}
+.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}
+.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}
+.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}.treatmentsGiven{
+    top: 20%;
+    left: 50%;
+}
