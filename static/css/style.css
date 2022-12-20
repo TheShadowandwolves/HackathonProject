@@ -1,9 +1,5 @@
-html{
-    width: 100%;
-    height: 100%;
-}
 
-body{
+body html{
     width: 100%;
     height: 100%;
     background-color: #f1f1f1;
@@ -43,26 +39,20 @@ body{
     height: 100%;
 }
 
-.report-container{
-    background-image: url("static/img/hatzalaForm.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-    width: 100%;
-    height: 100%;
-}
 
 .form-input{
+    background-image: url("/img/hatzalaForm.jpg");
+    /*background-color: aqua;*/
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    
-    background: #333;
+    flex-direction: column;
+    margin: auto;
+    width: 650px;
+    height: 750px;
 }
 
 .ticketNumber{ 
