@@ -2,23 +2,44 @@
 {% block head %}
 <title>Medical Form Hackathon Project</title>
 <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
-<script>
-    fetch('/data')
-      .then(response => response.json())
-      .then(data => {
-        // Update the page with the new data
-      });
-    </script>
+
 {% endblock %}
 
 
 {% block titlePage %}
-
+<!-- <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"> -->
 <h1 class="Titlename" >Medical form of {{data.typeName}}</h1>
-
-
+<!-- <button type="submit" class="button"  onclick="runCode()"></button> -->
+<div class="button-div">
+      <div class="circle_border">
+              <button class="record-button" onclick="startAnimation()" id="record-button"></div>
+      </div>
+</div>
 {% endblock %}
 {% block body %}
+<script>    
+  // fetch('/data')
+      //   .then(response => response.json())
+      //   .then(data => {
+      //     // Update the page with the new data
+      //   });
+      const recordButton = document.getElementById('record-button');
+  
+      recordButton.addEventListener('click', function() {
+      recordButton.classList.toggle('clicked');
+      });
+  
+      // element = document.getElementById("record-button");
+  
+      // element.addEventListener("click", function startAnimation() {
+      //     element.style = "width: 60px; height: 60px; border-radius: 10%; margin-top: 20px; transition: all 0.5s ease;";
+      //     var wait;
+      //     wait = element.addEventListener("click", function endAnimation() {
+      //         element.style = "width: 100px; height: 100px; border-radius: 50%; margin-top: 2px; transition: all 0.5s ease;";
+      //     }, false)
+      // }, false)
+    </script>   
 <!--Hatzalah PDF Format-->
 
 

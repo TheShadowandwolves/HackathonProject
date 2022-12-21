@@ -628,3 +628,119 @@ ul {
     text-align: center;
     background-color: #6aa84f;
   }
+  /* button{
+    background-color: #6aa84f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 50px;
+  }
+  button:active{
+    background-color: #6aa84f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  button::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  } */
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto|Lato|Droid+Sans|Noto+Sans);
+
+.button-div {
+    margin-top: 20px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 64px;
+    border-radius: 50%;
+}
+
+.circle_border {
+    width: 104px;
+    height: 106px;
+    border: 8px solid rgb(124, 123, 123);
+    border-top: 8px solid rgb(133, 133, 133);
+    border-radius: 50%;
+    margin-top: 1px;
+    z-index: 1;
+}
+
+.record-button {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background-color: crimson;
+    z-index: 0;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+/* .record-button:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} */
+#record-button.clicked{
+    transform: translateY(10px);
+    background-color: #ff0000;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+}
+/*
+.animate_record-button {
+    animation: animate_record-button__animation 0.5s normal forwards;
+}
+
+.end_animate_record-button {
+    animation: end_animate_record-button 0.5s normal forwards;
+}
+*/
+
+@keyframes animate_record-button__animation {
+    from {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes end_animate_record-button {
+    from {
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        margin-top: 20px;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 2px;
+    }
+}
