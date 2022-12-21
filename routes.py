@@ -15,7 +15,8 @@ def get_json():
     return data
 
 def go_record():
-    #WhisperLive.main()
+    WhisperLive.main()
+    print("done recording")
     pass
 
 def stop_record():
@@ -35,9 +36,9 @@ def handle_button_click():
     data = request.get_json()
     value = data['value']
     print(value)
-    if (value == '1'):
+    if (int(value) == 1):
         go_record()
-    elif (value == '0'):
+    elif (value == 0):
         stop_record()
     return 'ok'
 
