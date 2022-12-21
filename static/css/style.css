@@ -65,9 +65,9 @@ body, html{
 
 .ticketNumber{ 
     position: absolute;
-    top: 693px;
+    top: 700px;
     left: 413px;
-    background-color: rgba(51, 51, 51, 0.126);
+    background-color: rgba(214, 26, 26, 0.126);
 
     color: black;
     font-size: 12px;
@@ -79,7 +79,7 @@ body, html{
 }
 .date{
     position: absolute;
-    top: 400px;
+    top: 27%;
     left: 410px;
     background-color: rgba(51, 51, 51, 0.126);
     color: black;
@@ -92,7 +92,7 @@ body, html{
 }
 .time{
     position: absolute;
-    top: 400px;
+    top: 27%;
     left: 200px;
     background-color: rgba(51, 51, 51, 0.126);
     color: black;
