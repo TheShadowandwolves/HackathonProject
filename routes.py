@@ -1,20 +1,22 @@
 from flask import render_template, request, redirect, url_for, flash, jsonify
 from HackathonProject import app
+from HackathonProject import parse, WhisperLive
 import random
 import requests
 import json
-from parse import Parse as ps
+
 
 
 def get_json():
-    data = ps()
+    data = parse.Parse()
     return data
 
 def go_record():
-    pass
+    WhisperLive.main()
 
 def stop_record():
-    pass
+    with open("stop.txt","w+") as f:
+        f.write("True")
 
 ### app routes ###
 
