@@ -19,17 +19,30 @@
 {% endblock %}
 {% block body %}
 <script>    
-  // fetch('/data')
-      //   .then(response => response.json())
-      //   .then(data => {
-      //     // Update the page with the new data
-      //   });
+      fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+          // Update the page with the new data
+        });
       const recordButton = document.getElementById('record-button');
   
       recordButton.addEventListener('click', function() {
       recordButton.classList.toggle('clicked');
+       value = 1;
+      if (recordButton.classList.contains('clicked')) {
+        value = "1"
+      } else {
+        value = "0"
+      }
+
+      fetch('/button-click', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ value: value })
       });
-  
+    });
       // element = document.getElementById("record-button");
   
       // element.addEventListener("click", function startAnimation() {

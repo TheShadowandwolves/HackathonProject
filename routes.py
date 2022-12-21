@@ -19,6 +19,14 @@ def home():
     print("dic")
     return render_template('home.html', data = data)
 
+@app.route('/button-click', methods=['POST'])
+def handle_button_click():
+    data = request.get_json()
+    value = data['value']
+    print(value)
+    return 'ok'
+
+
 @app.route('/data')
 def get_data():
     data = {'key': 'new value'}
