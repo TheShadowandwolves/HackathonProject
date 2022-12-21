@@ -3,12 +3,14 @@ from HackathonProject import app
 import random
 import requests
 import json
+from parse import Parse as ps
 def get_location():
     city = "New York"
     return city
 
 def get_json():
-    pass
+    data = ps()
+    return data
 
 def go_record():
     pass
@@ -21,7 +23,7 @@ def stop_record():
 @app.route('/')
 @app.route('/home')
 def home():
-    data = {"time": "12:00", "firstName": "John", "lastName": "Doe"}
+    data = {"time": "12:00", "firstName": "John", "lastName": "Doe", "location": "New York"}
     print("dic")
     return render_template('home.html', data = data)
 
@@ -39,7 +41,7 @@ def handle_button_click():
 
 @app.route('/data')
 def get_data():
-    data = {'key': 'new value'}
+    data = get_json()
     return jsonify(data)
 
 @app.route('/tableIndex')
