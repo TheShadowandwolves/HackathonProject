@@ -22,7 +22,10 @@
       fetch('/data')
         .then(response => response.json())
         .then(data => {
-          // Update the page with the new data
+          const nameElement = document.getElementById('name');
+
+          // Set the innerHTML of the element to the new data
+          nameElement.innerHTML = data.name;
         });
       const recordButton = document.getElementById('record-button');
   

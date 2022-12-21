@@ -10,12 +10,18 @@ def get_location():
 def get_json():
     pass
 
+def go_record():
+    pass
+
+def stop_record():
+    pass
+
 ### app routes ###
 
 @app.route('/')
 @app.route('/home')
 def home():
-    data = get_json()
+    data = {"time": "12:00", "firstName": "John", "lastName": "Doe"}
     print("dic")
     return render_template('home.html', data = data)
 
@@ -24,6 +30,10 @@ def handle_button_click():
     data = request.get_json()
     value = data['value']
     print(value)
+    if (value == '1'):
+        go_record()
+    elif (value == '0'):
+        stop_record()
     return 'ok'
 
 
