@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, url_for, flash, jsonify
 from HackathonProject import app
-from HackathonProject import parse, WhisperLive
+from HackathonProject import parse
+from HackathonProject import WhisperLive
 import random
 import requests
 import json
@@ -8,11 +9,14 @@ import json
 
 
 def get_json():
-    data = parse.Parse()
+    parse.Parse()
+    with open("data.json","r") as f:
+        data = json.load(f)
     return data
 
 def go_record():
-    WhisperLive.main()
+    #WhisperLive.main()
+    pass
 
 def stop_record():
     with open("stop.txt","w+") as f:

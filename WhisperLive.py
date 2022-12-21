@@ -93,6 +93,6 @@ def main():
        # print("\n\033[93mQuitting..\033[0m")
         if os.path.exists('dictate.wav'): os.remove('dictate.wav')
 
-# if __name__ == '__main__':
-#     main()  # by Nik
+if __name__ == '__main__':
+    main()  # by Nik
 
