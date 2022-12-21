@@ -2,12 +2,19 @@
 {% block head %}
 <title>Medical Form Hackathon Project</title>
 <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+<script>
+    fetch('/data')
+      .then(response => response.json())
+      .then(data => {
+        // Update the page with the new data
+      });
+    </script>
 {% endblock %}
 
 
 {% block titlePage %}
 
-<h1 class="Titlename" >Medical form of </h1>
+<h1 class="Titlename" >Medical form of {{data.typeName}}</h1>
 
 
 {% endblock %}
@@ -17,7 +24,7 @@
 
     <div class="form-input">
         
-        <div class=" ticketNumber">{{ data }}</div>
+        <div class=" ticketNumber">{{ data["typeName"] }}</div>
 
         <div class="date"></div>
         <div class="time"></div>
