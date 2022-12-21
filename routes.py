@@ -17,3 +17,7 @@ def home():
 def get_data():
     data = {'key': 'new value'}
     return jsonify(data)
+
+@app.route('/tableIndex')
+def tableIndex():
+    return render_template('tableIndex.html')

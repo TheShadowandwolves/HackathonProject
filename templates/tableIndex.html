@@ -1,0 +1,271 @@
+
+
+{% extends "/base/base.html "%}
+{% block head %}
+<title>Medical Form Hackathon Project</title>
+<link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+
+{% endblock %}
+{% block titlePage %}
+
+<h1 class="Titlename" >Medical Table</h1>
+
+
+{% endblock %}
+{% block body %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+
+  <!-- /*<input type="button" class="button" style="float: right;" value="Update" onclick="runCode()" />*/ -->
+
+  <table>
+    <tr>
+      <th>Parameter:</th>
+      <th>Info:</th>
+    </tr>
+
+    <ul>
+      <li><p>Ticket Number:  ticketNumber </p></li> 
+      <!-- /*Should be automatic, bc of dispatcher, idk*/ -->
+      <li><p>Date:  date </p> </li>
+      <!-- /*get date via Date() or something*/ -->
+
+      <li>Time'': </li>
+
+       <!-- /*get time via Time() or something*/ -->
+
+      <li>First Name: </li>
+
+      <li>firstName</li>
+
+
+      <li>Last Name: </li>
+
+      <li>lastName</li>
+
+
+      <li>ID Number: </li>
+
+      <li>idNumber</li>
+
+
+      <li>Age: </li>
+
+      <li>age</li>
+
+
+      <li>Sex: </li>
+
+      <li>sex</li>
+
+
+      <li>Address': </li>
+
+      <li>address</li>
+
+
+      <li>Telephone: </li>
+
+      <li>telephone</li>
+
+
+      <li>Main' Concern: </li>
+
+      <!-- /*These are the events. need trigger words from simcha*/ -->
+      <li>mainConcern</li>
+
+      
+      <li>Scenario Detalied: </li>
+
+      <li>scenarioDetalied</li>
+
+
+      <li>Level of Conscienceness (Time' 1): </li>
+
+      <li>levelOfConsciencenessTime1</li>
+
+
+      <li>Level of Conscienceness (Time' 2): </li>
+
+      <li>levelOfConsciencenessTime2</li>
+
+
+      <li>Breathing Status (Time' 1): </li>
+
+      <li>breathingStatusTime1</li>
+
+      
+     <li>Breathing Status (Time' 2): </li>
+
+      <li>breathingStatusTime2</li>
+
+
+      <li>Breaths per Minute (Time' 1): </li>
+
+      <li>breathsPerMinuteTime1</li>
+
+
+      <li>Breaths per Minute (Time' 2): </li>
+
+      <li>breathsPerMinuteTime2</li>
+
+
+      <li>Saturation (Time' 1): </li>
+
+      <li>saturationTime1</li>
+
+      
+      <li>Saturation (Time' 2): </li>
+
+      <li>saturationTime2</li>
+
+      
+      <li>Pulses per Minute (Time' 1);</li>
+
+      <li>pulsesPerMinuteTime1</li>
+
+
+      <li>Pulses per Minute (Time' 2);</li>
+
+      <li>pulsesPerMinuteTime2</li>
+
+
+      <li>Strength of Pulse (Time' 1): </li>
+
+      <li>strengthOfPulseTime1</li>
+
+
+      <li>Strength of Pulse (Time' 2): </li>
+
+      <li>strengthOfPulseTime2</li>
+
+      
+      <li>Pulse Regularity (Time' 1): </li>
+
+      <li>pulseRegularityTime1</li>
+      
+      <li>Pulse Regularity (Time' 2): </li
+>
+      <li>pulseRegularityTime2</li
+>
+
+      <li>Systolic Blood Pressure (Time' 1): </li
+>
+      <li>systolicBloodPressureTime1</li
+>
+
+      <li>Systolic Blood Pressure (Time' 2): </li
+>
+      <li>systolicBloodPressureTime2</li
+>
+
+      <li>Diastolic Blood Pressure (Time' 1): </li
+>
+      <li>diastolicBloodPressureTime1</li
+>
+      
+      <li>Diastolic Blood Pressure (Time' 2): </li
+>
+      <li>diastolicBloodPressureTime2</li
+>
+      
+      <li>Glucose (Time' 1): </li
+>
+      <li>glucoseTest1</li
+>
+
+      <li>Glucose (Time' 2): </li
+>
+      <li>glucoseTest2</li
+>
+
+      <li>Allergies: </li
+>
+      <li>allergies</li
+>
+
+      <li>Temperature PO/PR (Time' 1): </li
+>
+      <li>temperaturePOPRtime1</li
+>
+              
+      <li>Temperature PO/PR (Time' 2): </li
+>
+      <li>temperaturePOPRtime2</li
+>
+
+      <li>Treatments Given: </li
+>
+      <li>treatmentsGiven</li
+>
+
+      <li>ALS Level Treatments: </li
+>
+      <li>ALSlevelTreatments</li
+>
+
+      <li>ALS Drug Therapy: </li
+>
+      <li>ALSdrugTherapy</li
+>
+              
+      <li>Method of Evacuation: </li
+>
+      <li>methodOfEvacuation</li
+>
+
+      <li>Evacuation Destination: </li
+>
+      <li>evacuationDestination</li
+>
+
+      <li>Reason for Referral: </li
+>
+      <li>reasonForReferral</li
+>
+
+      <li>Patient Name & Driver's Number: </li
+>
+      <li>patientNameAndDriversNumber</li
+>
+              
+      <li>Attending Doctor & Liscence Number: </li
+>
+      <li>attendingDoctorAndLiscenceNumber</li
+>
+
+      <li>Signature</li
+> 
+      <!-- /*might be useless but it's on the form*/ -->
+      <li>signature</li
+>
+      </ul>
+  <ul>
+      <li>
+          Refusal of Hospitalization:    
+      </li>
+      <li>Name: </li
+>
+      <li>nameRefusalOfHospitalization</li
+>
+
+      <li>ID: </li
+>
+      <li>idRefusalOfHospitalization</li
+>
+      
+      <li>Signature: </li
+> 
+      <!-- /*possibly obsliete*/ -->
+      <li>signatureRefusalOfHospitalization</li
+>
+
+
+      </ul>
+  </table>
+
+
+
+{% endblock %}
+  
