@@ -7,19 +7,15 @@ def get_location():
     city = "New York"
     return city
 
+def get_json():
+    pass
 
 ### app routes ###
 
 @app.route('/')
 @app.route('/home')
 def home():
-    data ={ "typeName": "test", 
-            "date": "date",
-            "time": "time",
-            "location": "location",
-            "currentlocation": get_location()
-
-            }
+    data = get_json()
     print("dic")
     return render_template('home.html', data = data)
 
