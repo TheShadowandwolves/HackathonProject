@@ -4,9 +4,7 @@ import random
 import requests
 import json
 from parse import Parse as ps
-def get_location():
-    city = "New York"
-    return city
+
 
 def get_json():
     data = ps()
@@ -23,8 +21,7 @@ def stop_record():
 @app.route('/')
 @app.route('/home')
 def home():
-    data = {"time": "12:00", "firstName": "John", "lastName": "Doe", "location": "New York"}
-    print("dic")
+    data = {}
     return render_template('home.html', data = data)
 
 @app.route('/button-click', methods=['POST'])

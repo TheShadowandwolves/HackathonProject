@@ -63,28 +63,52 @@
       dic["telephone"] = document.getElementById("telephone").value
       dic["mainConcern"] = document.getElementById("mainConcern").value
       dic["scenarioDetailed"] = document.getElementById("scenarioDetailed").value
-      dic["levelOfConsciencenessTime1"] = document.getElementById("levelOfConsciencenessTime1").value
-      dic["levelOfConsciencenessTime2"] = document.getElementById("levelOfConsciencenessTime2").value
       dic["breathsPerMinuteTime1"] = document.getElementById("breathsPerMinuteTime1").value
       dic["breathsPerMinuteTime2"] = document.getElementById("breathsPerMinuteTime2").value
-      
+      dic["importantmetrics"] = document.getElementById("importantmetrics").value
+      dic["consciencenesslevel1"] = document.getElementById("consciencenesslevel1").value
+      dic["consciencenesslevel2"] = document.getElementById("consciencenesslevel2").value
+      dic["breathingstatus1"] = document.getElementById("breathingstatus1").value
+      dic["breathingstatus2"] = document.getElementById("breathingstatus2").value
+      dic["saturation1"] = document.getElementById("saturation1").value
+      dic["saturation2"] = document.getElementById("saturation2").value
+      dic["pulsesserminute1"] = document.getElementById("pulsesserminute1").value
+      dic["pulsesperminute2"] = document.getElementById("pulsesperminute2").value
+      dic["strengthofpulse1"] = document.getElementById("strengthofpulse1").value
+      dic["strengthofpulse2"] = document.getElementById("strengthofpulse2").value
+      dic["pulseregularity1"] = document.getElementById("pulseregularity1").value
+      dic["pulseregularity2"] = document.getElementById("pulseregularity2").value
+      dic["systolicbloodpressure1"] = document.getElementById("systolicbloodpressure1").value
+      dic["systolicbloodpressure2"] = document.getElementById("systolicbloodpressure2").value
+      dic["diastolicbloodpressure1"] = document.getElementById("diastolicbloodpressure1").value
+      dic["diastolicbloodpressure2"] = document.getElementById("diastolicbloodpressure2").value
+      dic["glucosetest1"] = document.getElementById("glucosetest1").value
+      dic["glucosetest2"] = document.getElementById("glucosetest2").value
+      dic["allergies"] = document.getElementById("allergies").value
+		  dic["temperaturepopr1"] = document.getElementById("temperaturepopr1").value
+      dic["temperaturepopr2"] = document.getElementById("temperaturepopr2").value
+      dic["treatmentsgiven"] = document.getElementById("treatmentsgiven").value
+      dic["alsleveltreatments"] = document.getElementById("alsleveltreatments").value
+      dic["alsdrugtherapy"] = document.getElementById("alsdrugtherapy").value
+      dic["methodofevacuation"] = document.getElementById("methodofevacuation").value
+      dic["evacuationdestination"] = document.getElementById("evacuationdestination").value
+      dic["reasonforreferral"] = document.getElementById("reasonforreferral").value
+      dic["patientnameanddriversnumber"] = document.getElementById("patientnameanddriversnumber").value
+      dic["attendingdoctorandliscencenumber"] = document.getElementById("attendingdoctorandliscencenumber").value
+      dic["signature"] = document.getElementById("signature").value
+      dic["namerefusalofhospitalization"] = document.getElementById("namerefusalofhospitalization").value
+      dic["idrefusalofhospitalization"] = document.getElementById("idrefusalofhospitalization").value
+      dic["signaturerefusalofhospitalization"] = document.getElementById("signaturerefusalofhospitalization").value
+      dic["currentlocation"] = document.getElementById("currentlocation").value
+
     });
       fetch('/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ value: value })
+        body: JSON.stringify({ value: dic })
       });
-      // element = document.getElementById("record-button");
-  
-      // element.addEventListener("click", function startAnimation() {
-      //     element.style = "width: 60px; height: 60px; border-radius: 10%; margin-top: 20px; transition: all 0.5s ease;";
-      //     var wait;
-      //     wait = element.addEventListener("click", function endAnimation() {
-      //         element.style = "width: 100px; height: 100px; border-radius: 50%; margin-top: 2px; transition: all 0.5s ease;";
-      //     }, false)
-      // }, false)
     </script>   
 <!--Hatzalah PDF Format-->
 
