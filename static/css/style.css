@@ -62,7 +62,34 @@ body, html{
 }
 
 
+.location{
+    position: absolute;
+    top: 370px;
+    left: 450px;
+    background-color: rgba(51, 51, 51, 0.126);
 
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    width: 130px;
+    height: 20px;
+    /*put it in the front ebene*/
+    z-index: 1;
+}
+.medicName{
+    position: absolute;
+    top: 370px;
+    left: 585px;
+    background-color: rgba(51, 51, 51, 0.126);
+
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    width: 130px;
+    height: 20px;
+    /*put it in the front ebene*/
+    z-index: 1;
+}
 
 .ticketNumber{ 
     position: absolute;
