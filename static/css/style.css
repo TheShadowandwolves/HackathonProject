@@ -65,7 +65,7 @@ body, html{
 .location{
     position: absolute;
     top: 380px;
-    left: 485px;
+    left: 540px;
     background-color: rgba(51, 51, 51, 0.126);
     border: none;
     color: black;
@@ -79,7 +79,7 @@ body, html{
 .medicName{
     position: absolute;
     top: 380px;
-    left: 620px;
+    left: 645px;
     background-color: rgba(51, 51, 51, 0.126);
     border: none;
     color: black;
