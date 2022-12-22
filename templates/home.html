@@ -1,132 +1,274 @@
-{% extends "/base/base.html "%}
-{% block head %}
-<title>Medical Form Hackathon Project</title>
-<link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Medical Form Hackathon Project</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
 
-{% endblock %}
+        <meta name="description" content="This is the description">
 
 
-{% block titlePage %}
-<!-- <base target="_top">
-    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"> -->
-<h1 class="Titlename" >Medical Form<!--form of {{data.typeName}}--></h1>
-<!-- <button type="submit" class="button"  onclick="runCode()"></button> -->
-<div class="button-div">
-      <div class="circle_border">
-              <button class="record-button" onclick="startAnimation()" id="record-button"></div>
+      </head>
+  <body>
+    <header class="main-header">
+      <!-- <base target="_top">
+          <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"> -->
+      <h1 class="Titlename" >Medical Form<!--form of {{data.typeName}}--></h1>
+      <!-- <button type="submit" class="button"  onclick="runCode()"></button> -->
+      <div class="button-div">
+            <div class="circle_border">
+                    <button class="record-button" onclick="startAnimation()" id="record-button"></div>
+            </div>
       </div>
-</div>
-{% endblock %}
-{% block body %}
-<script>    
-  // fetch('/data')
-      //   .then(response => response.json())
-      //   .then(data => {
-      //     // Update the page with the new data
-      //   });
-      const recordButton = document.getElementById('record-button');
-  
-      recordButton.addEventListener('click', function() {
-      recordButton.classList.toggle('clicked');
+    </header>
+
+  <!--Hatzalah PDF Format-->
+
+
+      <div class="form-input">
+          
+        <!-- <div class="location">{{ data["location"] }}</div> -->
+        <input type="text" class="location" name="location" value="{{data['location']}}">
+        <!-- <div class="medicName">{{ data["medicName"] }}</div> -->
+        <input type="text" class="medicName" name="medicName" value="{{data['medicName']}}">
+          <!-- <div class=" ticketNumber">{{ data["typeName"] }}</div> -->
+          <input type="text" class="ticketNumber" name="ticketNumber" value="{{data['ticketNumber']}}">
+
+          <!-- <div class="date">{{ data["date"]}}</div> -->
+          <input type="text" class="date" name="date" value="{{data['date']}}">
+          <!-- <div class="time">{{ data["time"]}}</div> -->
+          <input type="text" class="time" name="time" value="{{data['time']}}">
+
+          <!-- <div class="firstName">{{ data["firstName"]}}</div> -->
+          <input type="text" class="firstName" name="firstName" value="{{data['firstName']}}">
+          <!-- <div class="lastName">{{ data["lastName"]}}</div> -->
+          <input type="text" class="lastName" name="lastName" value="{{data['lastName']}}">
+          <!-- <div class="idNumber">{{ data["idNumber"]}}</div> -->
+          <input type="text" class="idNumber" name="idNumber" value="{{data['idNumber']}}">
+          <!-- <div class="age">{{ data["age"]}}</div> -->
+          <input type="text" class="age" name="age" value="{{data['age']}}">
+          <!-- <div class="sex">{{ data["sex"]}}</div> -->
+          <input type="text" class="sex" name="sex" value="{{data['sex']}}">
+          <!-- <div class="address">{{ data["address"]}}</div> -->
+          <input type="text" class="address" name="address" value="{{data['address']}}">
+          <!-- <div class="telephone">{{ data["telephone"]}}</div> -->
+          <input type="text" class="telephone" name="telephone" value="{{data['telephone']}}">
+          
+          <!-- <div class="mainConcern">{{ data["mainConcern"]}}</div> -->
+          <input type="text" class="mainConcern" name="mainConcern" value="{{data['mainConcern']}}">
+          
+          <!-- <div class="scenarioDetailed">{{ data["scenarioDetailed"]}}</div> -->
+          <input type="text" class="scenarioDetailed" name="scenarioDetailed" value="{{data['scenarioDetailed']}}">
+          <!-- <div class="importantMetrics">{{ data["importantMetrics"]}}</div>
+          <input type="text" class="importantMetrics" name="importantMetrics" value="{{data['importantMetrics']}}"> -->
+
+          <!-- <div class="levelOfConsciencenessTime1">{{ data["levelOfConsciencenessTime1"]}}</div> -->
+          <input type="text" class="levelOfConsciencenessTime1" name="levelOfConsciencenessTime1" value="{{data['levelOfConsciencenessTime1']}}">
+          <!-- <div class="levelOfConsciencenessTime2">{{ data["levelOfConsciencenessTime2"]}}</div> -->
+          <input type="text" class="levelOfConsciencenessTime2" name="levelOfConsciencenessTime2" value="{{data['levelOfConsciencenessTime2']}}">
+
+          <!-- <div class="breathsPerMinuteTime1">{{ data["breathsPerMinuteTime1"]}}</div> -->
+          <input type="text" class="breathsPerMinuteTime1" name="breathsPerMinuteTime1" value="{{data['breathsPerMinuteTime1']}}">
+          <!-- <div class="breathsPerMinuteTime2">{{ data["breathsPerMinuteTime2"]}}</div> -->
+          <input type="text" class="breathsPerMinuteTime2" name="breathsPerMinuteTime2" value="{{data['breathsPerMinuteTime2']}}">
+
+          <!-- <div class="breathingStatusTime1">{{ data["breathingStatusTime1"]}}</div> -->
+          <input type="text" class="breathingStatusTime1" name="breathingStatusTime1" value="{{data['breathingStatusTime1']}}">
+          <!-- <div class="breathingStatusTime2">{{ data["breathingStatusTime2"]}}</div> -->
+          <input type="text" class="breathingStatusTime2" name="breathingStatusTime2" value="{{data['breathingStatusTime2']}}">
+
+          <!-- <div class="saturationTime1">{{ data["saturationTime1"]}}</div> -->
+          <input type="text" class="saturationTime1" name="saturationTime1" value="{{data['saturationTime1']}}">
+          <!-- <div class="saturationTime2">{{ data["saturationTime2"]}}</div> -->
+          <input type="text" class="saturationTime2" name="saturationTime2" value="{{data['saturationTime2']}}">
+
+          <!-- <div class="pulsesPerMinuteTime1">{{ data["pulsesPerMinuteTime1"]}}</div> -->
+          <input type="text" class="pulsesPerMinuteTime1" name="pulsesPerMinuteTime1" value="{{data['pulsesPerMinuteTime1']}}">
+          <!-- <div class="pulsesPerMinuteTime2">{{ data["pulsesPerMinuteTime2"]}}</div> -->
+          <input type="text" class="pulsesPerMinuteTime2" name="pulsesPerMinuteTime2" value="{{data['pulsesPerMinuteTime2']}}">
+
+          <!-- <div class="strengthOfPulseTime1">{{ data["strengthOfPulseTime1"]}}</div> -->
+          <input type="text" class="strengthOfPulseTime1" name="strengthOfPulseTime1" value="{{data['strengthOfPulseTime1']}}">
+          <!-- <div class="strengthOfPulseTime2">{{ data["strengthOfPulseTime2"]}}</div> -->
+          <input type="text" class="strengthOfPulseTime2" name="strengthOfPulseTime2" value="{{data['strengthOfPulseTime2']}}">
+
+          <!-- <div class="pulseRegularityTime1">{{ data["pulseRegularityTime1"]}}</div> -->
+          <input type="text" class="pulseRegularityTime1" name="pulseRegularityTime1" value="{{data['pulseRegularityTime1']}}">
+          <!-- <div class="pulseRegularityTime2">{{ data["pulseRegularityTime2"]}}</div> -->
+          <input type="text" class="pulseRegularityTime2" name="pulseRegularityTime2" value="{{data['pulseRegularityTime2']}}">
+
+          <!-- <div class="systolicBloodPressureTime1">{{ data["systolicBloodPressureTime1"]}}</div> -->
+          <input type="text" class="systolicBloodPressureTime1" name="systolicBloodPressureTime1" value="{{data['systolicBloodPressureTime1']}}">
+          <!-- <div class="systolicBloodPressureTime2">{{ data["systolicBloodPressureTime2"]}}</div> -->
+          <input type="text" class="systolicBloodPressureTime2" name="systolicBloodPressureTime2" value="{{data['systolicBloodPressureTime2']}}">
+
+          <!-- <div class="diastolicBloodPressureTime1">{{ data["diastolicBloodPressureTime1"]}}</div> -->
+          <input type="text" class="diastolicBloodPressureTime1" name="diastolicBloodPressureTime1" value="{{data['diastolicBloodPressureTime1']}}">
+          <!-- <div class="diastolicBloodPressureTime2">{{ data["diastolicBloodPressureTime2"]}}</div> -->
+          <input type="text" class="diastolicBloodPressureTime2" name="diastolicBloodPressureTime2" value="{{data['diastolicBloodPressureTime2']}}">
+
+          <!-- <div class="glucoseTest1">{{ data["glucoseTest1"]}}</div> -->
+          <input type="text" class="glucoseTest1" name="glucoseTest1" value="{{data['glucoseTest1']}}">
+          <!-- <div class="glucoseTest2">{{ data["glucoseTest2"]}}</div> -->
+          <input type="text" class="glucoseTest2" name="glucoseTest2" value="{{data['glucoseTest2']}}">
+
+          <!-- <div class="allergies">{{ data["allergies"]}}</div> -->
+          <input type="text" class="allergies" name="allergies" value="{{data['allergies']}}">
+
+          <!-- <div class="temperaturePOPRtime1">{{ data["temperaturePOPRtime1"]}}</div> -->
+          <input type="text" class="temperaturePOPRtime1" name="temperaturePOPRtime1" value="{{data['temperaturePOPRtime1']}}">
+          <!-- <div class="temperaturePOPRtime2">{{ data["temperaturePOPRtime2"]}}</div> -->
+          <input type="text" class="temperaturePOPRtime2" name="temperaturePOPRtime2" value="{{data['temperaturePOPRtime2']}}">
+
+
+          <!-- <div class="treatmentsGiven">{{ data["treatmentsGiven"]}}</div> -->
+          <input type="text" class="treatmentsGiven" name="treatmentsGiven" value="{{data['treatmentsGiven']}}">
+
+
+          <!-- <div class="ALSlevelTreatments">{{ data["ALSlevelTreatments"]}}</div> -->
+          <input type="text" class="ALSlevelTreatments" name="ALSlevelTreatments" value="{{data['ALSlevelTreatments']}}">
+
+          <!-- <div class="ALSdrugTherapy">{{ data["ALSdrugTherapy"]}}</div> -->
+          <input type="text" class="ALSdrugTherapy" name="ALSdrugTherapy" value="{{data['ALSdrugTherapy']}}">
+
+
+          <!-- <div class="methodOfEvacuation">{{ data["methodOfEvacuation"]}}</div> -->
+          <input type="text" class="methodOfEvacuation" name="methodOfEvacuation" value="{{data['methodOfEvacuation']}}">
+          <!-- <div class="evacuationDestination">{{ data["evacuationDestination"]}}</div> -->
+          <input type="text" class="evacuationDestination" name="evacuationDestination" value="{{data['evacuationDestination']}}">
+          <!-- <div class="reasonForReferral">{{ data["reasonForReferral"]}}</div> -->
+          <input type="text" class="reasonForReferral" name="reasonForReferral" value="{{data['reasonForReferral']}}">
+
+          
+          <!-- <div class="patientNameAndDriversNumber">{{ data["patientNameAndDriversNumber"]}}</div> -->
+          <input type="text" class="patientNameAndDriversNumber" name="patientNameAndDriversNumber" value="{{data['patientNameAndDriversNumber']}}">
+          <!-- <div class="attendingDoctorAndLiscenceNumber">{{ data["attendingDoctorAndLiscenceNumber"]}}</div> -->
+          <input type="text" class="attendingDoctorAndLiscenceNumber" name="attendingDoctorAndLiscenceNumber" value="{{data['attendingDoctorAndLiscenceNumber']}}">
+          <!-- <div class="signature">{{ data["signature"]}}</div> -->
+          <input type="text" class="signature" name="signature" value="{{data['signature']}}">
+
+          <!-- <div class="nameRefusalOfHospitalization">{{ data["nameRefusalOfHospitalization"]}}</div> -->
+          <input type="text" class="nameRefusalOfHospitalization" name="nameRefusalOfHospitalization" value="{{data['nameRefusalOfHospitalization']}}">
+          <!-- <div class="idRefusalOfHospitalization">{{ data["idRefusalOfHospitalization"]}}</div> -->
+          <input type="text" class="idRefusalOfHospitalization" name="idRefusalOfHospitalization" value="{{data['idRefusalOfHospitalization']}}">
+          <!-- <div class="signatureRefusalOfHospitalization">{{ data["signatureRefusalOfHospitalization"]}}</div> -->
+          <input type="text" class="signatureRefusalOfHospitalization" name="signatureRefusalOfHospitalization" value="{{data['signatureRefusalOfHospitalization']}}">
+
+      </div>
+
+      <div id ="btn-submit" class="btn-submit">
+        <span>Submit</span>
+        <div class="rotate"></div>
+      </div>
+      
+      <script>    
+        fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+          const nameElement = document.getElementById('name');
+
+          // Set the innerHTML of the element to the new data
+          nameElement.innerHTML = data.name;
+        });
+        const recordButton = document.getElementById('record-button');
+    
+        recordButton.addEventListener('click', function() {
+        recordButton.classList.toggle('clicked');
+        value = 1;
+        if (recordButton.classList.contains('clicked')) {
+          value = "1"
+        } else {
+          value = "0"
+        }
+
+        fetch('/button-click', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ value: value })
+          });
+        });
+      const submitButton = document.getElementById('btn-submit');
+      submitButton.addEventListener('click', function() {
+        dic = {}
+        dic["location"] = document.getElementById("location").value
+        dic["date"] = document.getElementById("date").value
+        dic["time"] = document.getElementById("time").value
+        dic["firstName"] = document.getElementById("firstName").value
+        dic["lastName"] = document.getElementById("lastName").value
+        dic["idNumber"] = document.getElementById("idNumber").value
+        dic["medicName"] = document.getElementById("medicName").value
+        dic["ticketNumber"] = document.getElementById("ticketNumber").value
+        dic["age"] = document.getElementById("age").value
+        dic["sex"] = document.getElementById("sex").value
+        dic["address"] = document.getElementById("address").value
+        dic["telephone"] = document.getElementById("telephone").value
+        dic["mainConcern"] = document.getElementById("mainConcern").value
+        dic["scenarioDetailed"] = document.getElementById("scenarioDetailed").value
+        dic["breathsPerMinuteTime1"] = document.getElementById("breathsPerMinuteTime1").value
+        dic["breathsPerMinuteTime2"] = document.getElementById("breathsPerMinuteTime2").value
+        dic["importantmetrics"] = document.getElementById("importantmetrics").value
+        dic["consciencenesslevel1"] = document.getElementById("consciencenesslevel1").value
+        dic["consciencenesslevel2"] = document.getElementById("consciencenesslevel2").value
+        dic["breathingstatus1"] = document.getElementById("breathingstatus1").value
+        dic["breathingstatus2"] = document.getElementById("breathingstatus2").value
+        dic["saturation1"] = document.getElementById("saturation1").value
+        dic["saturation2"] = document.getElementById("saturation2").value
+        dic["pulsesserminute1"] = document.getElementById("pulsesserminute1").value
+        dic["pulsesperminute2"] = document.getElementById("pulsesperminute2").value
+        dic["strengthofpulse1"] = document.getElementById("strengthofpulse1").value
+        dic["strengthofpulse2"] = document.getElementById("strengthofpulse2").value
+        dic["pulseregularity1"] = document.getElementById("pulseregularity1").value
+        dic["pulseregularity2"] = document.getElementById("pulseregularity2").value
+        dic["systolicbloodpressure1"] = document.getElementById("systolicbloodpressure1").value
+        dic["systolicbloodpressure2"] = document.getElementById("systolicbloodpressure2").value
+        dic["diastolicbloodpressure1"] = document.getElementById("diastolicbloodpressure1").value
+        dic["diastolicbloodpressure2"] = document.getElementById("diastolicbloodpressure2").value
+        dic["glucosetest1"] = document.getElementById("glucosetest1").value
+        dic["glucosetest2"] = document.getElementById("glucosetest2").value
+        dic["allergies"] = document.getElementById("allergies").value
+        dic["temperaturepopr1"] = document.getElementById("temperaturepopr1").value
+        dic["temperaturepopr2"] = document.getElementById("temperaturepopr2").value
+        dic["treatmentsgiven"] = document.getElementById("treatmentsgiven").value
+        dic["alsleveltreatments"] = document.getElementById("alsleveltreatments").value
+        dic["alsdrugtherapy"] = document.getElementById("alsdrugtherapy").value
+        dic["methodofevacuation"] = document.getElementById("methodofevacuation").value
+        dic["evacuationdestination"] = document.getElementById("evacuationdestination").value
+        dic["reasonforreferral"] = document.getElementById("reasonforreferral").value
+        dic["patientnameanddriversnumber"] = document.getElementById("patientnameanddriversnumber").value
+        dic["attendingdoctorandliscencenumber"] = document.getElementById("attendingdoctorandliscencenumber").value
+        dic["signature"] = document.getElementById("signature").value
+        dic["namerefusalofhospitalization"] = document.getElementById("namerefusalofhospitalization").value
+        dic["idrefusalofhospitalization"] = document.getElementById("idrefusalofhospitalization").value
+        dic["signaturerefusalofhospitalization"] = document.getElementById("signaturerefusalofhospitalization").value
+        dic["currentlocation"] = document.getElementById("currentlocation").value
+
       });
-  
-      // element = document.getElementById("record-button");
-  
-      // element.addEventListener("click", function startAnimation() {
-      //     element.style = "width: 60px; height: 60px; border-radius: 10%; margin-top: 20px; transition: all 0.5s ease;";
-      //     var wait;
-      //     wait = element.addEventListener("click", function endAnimation() {
-      //         element.style = "width: 100px; height: 100px; border-radius: 50%; margin-top: 2px; transition: all 0.5s ease;";
-      //     }, false)
-      // }, false)
-    </script>   
-<!--Hatzalah PDF Format-->
+        fetch('/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ value: dic })
+        });
 
-
-    <div class="form-input">
+        (function () {
+    $(document).on('click', '.btn-submit', function() {
+      if(!$(this).hasClass('loading')){
+        $(this).addClass('loading');
+        let self = this;
         
-      <div class="location">{{ data["location"] }}</div>
-
-      <div class="medicName">{{ data["medicName"] }}</div>
-
-        <div class=" ticketNumber">{{ data["typeName"] }}</div>
-
-        <div class="date">{{ data["date"]}}</div>
-        <div class="time">{{ data["time"]}}</div>
-
-        <div class="firstName">{{ data["firstName"]}}</div>
-        <div class="lastName">{{ data["lastName"]}}</div>
-        <div class="idNumber">{{ data["idNumber"]}}</div>
-        <div class="age">{{ data["age"]}}</div>
-        <div class="sex">{{ data["sex"]}}</div>
-        <div class="address">{{ data["address"]}}</div>
-        <div class="telephone">{{ data["telephone"]}}</div>
+        setTimeout(function() {
+          $(self).removeClass('loading');
+          $(self).addClass('checked');
+        },1500);
         
-        <div class="mainConcern">{{ data["mainConcern"]}}</div>
-        
-        <div class="scenarioDetailed">{{ data["scenarioDetailed"]}}</div>
-        <div class="importantMetrics">{{ data["importantMetrics"]}}</div>
-
-        <div class="levelOfConsciencenessTime1">{{ data["levelOfConsciencenessTime1"]}}</div>
-        <div class="levelOfConsciencenessTime2">{{ data["levelOfConsciencenessTime2"]}}</div>
-
-        <div class="breathsPerMinuteTime1">{{ data["breathsPerMinuteTime1"]}}</div>
-        <div class="breathsPerMinuteTime2">{{ data["breathsPerMinuteTime2"]}}</div>
-
-        <div class="breathingStatusTime1">{{ data["breathingStatusTime1"]}}</div>
-        <div class="breathingStatusTime2">{{ data["breathingStatusTime2"]}}</div>
-
-        <div class="saturationTime1">{{ data["saturationTime1"]}}</div>
-        <div class="saturationTime2">{{ data["saturationTime2"]}}</div>
-
-        <div class="pulsesPerMinuteTime1">{{ data["pulsesPerMinuteTime1"]}}</div>
-        <div class="pulsesPerMinuteTime2">{{ data["pulsesPerMinuteTime2"]}}</div>
-
-        <div class="strengthOfPulseTime1">{{ data["strengthOfPulseTime1"]}}</div>
-        <div class="strengthOfPulseTime2">{{ data["strengthOfPulseTime2"]}}</div>
-
-        <div class="pulseRegularityTime1">{{ data["pulseRegularityTime1"]}}</div>
-        <div class="pulseRegularityTime2">{{ data["pulseRegularityTime2"]}}</div>
-
-        <div class="systolicBloodPressureTime1">{{ data["systolicBloodPressureTime1"]}}</div>
-        <div class="systolicBloodPressureTime2">{{ data["systolicBloodPressureTime2"]}}</div>
-
-        <div class="diastolicBloodPressureTime1">{{ data["diastolicBloodPressureTime1"]}}</div>
-        <div class="diastolicBloodPressureTime2">{{ data["diastolicBloodPressureTime2"]}}</div>
-
-        <div class="glucoseTest1">{{ data["glucoseTest1"]}}</div>
-        <div class="glucoseTest2">{{ data["glucoseTest2"]}}</div>
-
-        <div class="allergies">{{ data["allergies"]}}</div>
-
-        <div class="temperaturePOPRtime1">{{ data["temperaturePOPRtime1"]}}</div>
-        <div class="temperaturePOPRtime2">{{ data["temperaturePOPRtime2"]}}</div>
-
-
-        <div class="treatmentsGiven">{{ data["treatmentsGiven"]}}</div>
-
-
-        <div class="ALSlevelTreatments">{{ data["ALSlevelTreatments"]}}</div>
-
-        <div class="ALSdrugTherapy">{{ data["ALSdrugTherapy"]}}</div>
-
-
-        <div class="methodOfEvacuation">{{ data["methodOfEvacuation"]}}</div>
-        <div class="evacuationDestination">{{ data["evacuationDestination"]}}</div>
-        <div class="reasonForReferral">{{ data["reasonForReferral"]}}</div>
-
-        
-        <div class="patientNameAndDriversNumber">{{ data["patientNameAndDriversNumber"]}}</div>
-        <div class="attendingDoctorAndLiscenceNumber">{{ data["attendingDoctorAndLiscenceNumber"]}}</div>
-        <div class="signature">{{ data["signature"]}}</div>
-
-        <div class="nameRefusalOfHospitalization">{{ data["nameRefusalOfHospitalization"]}}</div>
-        <div class="idRefusalOfHospitalization">{{ data["idRefusalOfHospitalization"]}}</div>
-        <div class="signatureRefusalOfHospitalization">{{ data["signatureRefusalOfHospitalization"]}}</div>
-
-    </div>
-
-    
-    
-
-{% endblock %}
+        setTimeout(function() {
+          $(self).removeClass('checked');
+        }, 3000);
+      }
+    });
+  })();
+      </script>   
+  </body>
+</html>

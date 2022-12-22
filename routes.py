@@ -1,27 +1,51 @@
 from flask import render_template, request, redirect, url_for, flash, jsonify
 from HackathonProject import app
+from HackathonProject import parse
+from HackathonProject import WhisperLive
 import random
 import requests
 import json
-def get_location():
-    city = "New York"
-    return city
+
+
 
 def get_json():
+    parse.Parse()
+    with open("data.json","r") as f:
+        data = json.load(f)
+    return data
+
+def go_record():
+    WhisperLive.main()
+    print("done recording")
     pass
+
+def stop_record():
+    with open("stop.txt","w+") as f:
+        f.write("True")
 
 ### app routes ###
 
 @app.route('/')
 @app.route('/home')
 def home():
-    data = get_json()
-    print("dic")
+    data = {}
     return render_template('home.html', data = data)
+
+@app.route('/button-click', methods=['POST'])
+def handle_button_click():
+    data = request.get_json()
+    value = data['value']
+    print(value)
+    if (int(value) == 1):
+        go_record()
+    elif (value == 0):
+        stop_record()
+    return 'ok'
+
 
 @app.route('/data')
 def get_data():
-    data = {'key': 'new value'}
+    data = get_json()
     return jsonify(data)
 
 @app.route('/tableIndex')
