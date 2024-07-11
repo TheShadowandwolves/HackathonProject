@@ -3,7 +3,6 @@
       <head>
         <title>Medical Form Hackathon Project</title>
         <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
-
         <meta name="description" content="This is the description">
 
 
@@ -19,6 +18,10 @@
                     <button class="record-button" onclick="startAnimation()" id="record-button"></div>
             </div>
       </div>
+      <div class="fetch">
+        <button class="fetch-button" onclick="fetchData()" id="fetch-button">Fetch Data</button>
+    </div>
+
     </header>
 
   <!--Hatzalah PDF Format-->
@@ -27,11 +30,11 @@
       <div class="form-input">
           
         <!-- <div class="location">{{ data["location"] }}</div> -->
-        <input type="text" class="location" name="location" value="{{data['location']}}">
+        <input type="text" class="location" id="location" name="location" value="{{data['location']}}">
         <!-- <div class="medicName">{{ data["medicName"] }}</div> -->
-        <input type="text" class="medicName" name="medicName" value="{{data['medicName']}}">
+        <input type="text" class="medicName" id="medicname" name="medicName" value="{{data['medicName']}}">
           <!-- <div class=" ticketNumber">{{ data["typeName"] }}</div> -->
-          <input type="text" class="ticketNumber" name="ticketNumber" value="{{data['ticketNumber']}}">
+          <input type="text" class="ticketNumber" name="ticketnumber" value="{{data['ticketNumber']}}">
 
           <!-- <div class="date">{{ data["date"]}}</div> -->
           <input type="text" class="date" name="date" value="{{data['date']}}">
@@ -160,15 +163,41 @@
         <div class="rotate"></div>
       </div>
       
-      <script>    
-        fetch('/data')
-        .then(response => response.json())
-        .then(data => {
-          const nameElement = document.getElementById('name');
+      
+  </body>
+  <script>    
+   function fetchData() {
+      const fetchbutton = document.getElementById('record-button');
+    
+    fetchbutton.addEventListener('click', function() {
+    fetchbutton.classList.toggle('clicked');
+    value = 1;
+    if (fetchbutton.classList.contains('clicked')) {
+      value = "1"
+    } else {
+      value = "0"
+    }
 
-          // Set the innerHTML of the element to the new data
-          nameElement.innerHTML = data.name;
-        });
+    fetch('/fetch-data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ value: value })
+      });
+    });
+  }
+      // Iterate over the key-value pairs in the data dictionary
+    //   for (const [key, value] of Object.entries(data)) {
+    //     // Get a reference to the element that you want to update
+    //     const element = document.getElementById(key);
+
+    //     // Set the innerHTML of the element to the new value
+    //     element.innerHTML = value;
+    //   }
+    // }
+
+      // });
         const recordButton = document.getElementById('record-button');
     
         recordButton.addEventListener('click', function() {
@@ -188,6 +217,8 @@
           body: JSON.stringify({ value: value })
           });
         });
+
+
       const submitButton = document.getElementById('btn-submit');
       submitButton.addEventListener('click', function() {
         dic = {}
@@ -243,7 +274,6 @@
         dic["signaturerefusalofhospitalization"] = document.getElementById("signaturerefusalofhospitalization").value
         dic["currentlocation"] = document.getElementById("currentlocation").value
 
-      });
         fetch('/submit', {
           method: 'POST',
           headers: {
@@ -251,24 +281,7 @@
           },
           body: JSON.stringify({ value: dic })
         });
+      });
 
-        (function () {
-    $(document).on('click', '.btn-submit', function() {
-      if(!$(this).hasClass('loading')){
-        $(this).addClass('loading');
-        let self = this;
-        
-        setTimeout(function() {
-          $(self).removeClass('loading');
-          $(self).addClass('checked');
-        },1500);
-        
-        setTimeout(function() {
-          $(self).removeClass('checked');
-        }, 3000);
-      }
-    });
-  })();
       </script>   
-  </body>
 </html>
